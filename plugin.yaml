@@ -1,0 +1,9 @@
+name: "kubeschema"
+version: "0.1.0"
+usage: "kubeschema for helm charts"
+description: "kubernetes json schema validation for helm chart in YAML."
+ignoreFlags: false
+command: "$HELM_PLUGIN_DIR/kubeschema"
+hooks:
+  install: "$HELM_PLUGIN_DIR/install.sh"
+  update: "$HELM_PLUGIN_DIR/install.sh"
